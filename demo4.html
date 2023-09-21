@@ -1,24 +1,29 @@
-&lt;html&gt; </br>
-    &lt;head&gt; </br>
-       &lt;title&gt;javascriptdemo4&lt;/title&gt; </br>
-       &lt;pre&gt; </br>
-        &lt;code&gt; </br>
-        &lt;script type="text/JavaScript"&gt;   </br>       
-        function myFun() {    </br>
-            var name = document.getElementById('name').value;    </br>
-            
-            document.getElementById('header1').innerHTML = 'Welcome ' + name + '!'; </br>
-        }    </br>
-    &lt;/script&gt; </br>
-    &lt;/code&gt; </br>
-      &lt;/pre&gt; </br>
-&lt;/head&gt; </br>
-&lt;body&gt; </br>
-    Enter Your Name: &lt;input type="text" id="name" /&gt; &lt;br/&gt; </br>
-    &lt;button onclick="myFun()"&gt;Click Me!!&lt;/button&gt; &lt;br/&gt;&lt;br/&gt; </br>
+<html>
+<head>
+    <title>Demo03</title>
 
-    &lt;h1 id="header1"&gt;&lt;/h1&gt; </br>
+    <script type="text/javascript">
+        
+        function teenager() {
+            var age = parseInt(document.getElementById("num").value);
+            var result = "";
+            if(age > 12 && age <20)
+               result= " teenager"
+            else  
+               result = " not a teenager"
 
-    &lt;/body&gt; </br>
-&lt;/html&gt; </br>
-<img src="ss4.png" style=" height: 300px; width:48vw;float: right;margin-top:-280px;"/>
+            document.getElementById('result').innerHTML = result;
+        }
+
+    </script>
+
+</head>
+<body>
+    
+    Enter Your Age: <input type="text" id="num" /> <br/>
+    <button onclick="teenager()">Can I Vote</button> <br/><br/>
+
+    <h1 id="result"></h1>
+
+</body>
+</html>

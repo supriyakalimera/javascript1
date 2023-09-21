@@ -1,25 +1,33 @@
 &lt;html&gt; </br>
-  &lt;head&gt;  </br>
-    &lt;title&gt;demo3&lt;/title&gt;  </br>
-    &lt;pre&gt;  </br>
-      &lt;code&gt;  </br>
-    &lt;script type="text/javascript"&gt;  </br>
-      alert("helo everyone");  </br>
-      function myfun() {  </br>
-        alert("javascript practice");  </br>
-      }  </br>
-      myfun();  </br>
-    &lt;/script&gt;  </br>
-    &lt;/code&gt;  </br>
-    &lt;/pre&gt;  </br>
-  &lt;/head&gt;  </br>
-  &lt;body&gt;  </br>
-    &lt;center&gt;  </br>
-      &lt;h1 id="header1"&gt;welcome to js&lt;/h1&gt;  </br>
-      &lt;h2 id="header2"&gt;js introduced in 1995&lt;/h2&gt;  </br>
-      &lt;button onclick="myfun()"&gt;click me&lt;/button&gt;  </br>
-    &lt;/center&gt;  </br>
-  &lt;/body&gt;  </br>
+&lt;head&gt; </br>
+    &lt;title&gt;Demo03&lt;/title&gt; </br>
+    &lt;pre&gt; </br>
+    &lt;code&gt; </br>
+    &lt;script type="text/javascript"&gt; </br>
+        
+        function eligibleForVote() { </br>
+            var num = parseInt(document.getElementById("num").value); </br>
+            var result = ""; </br>
+           
+            if(num &gt; 17) </br>
+                result = "you are eligible"; </br>
+            else </br>
+               result = "you are not eligible"; </br>
+
+            document.getElementById('result').innerHTML = result; </br>
+        } </br>
+    &lt;/script&gt; </br>
+    &lt;/code&gt; </br>
+     &lt;/pre&gt; </br>
+
+&lt;/head&gt; </br>
+&lt;body&gt; </br>
+    
+    Enter Your Age: &lt;input type="text" id="num" /&gt; &lt;br/&gt; </br>
+    &lt;button onclick="eligibleForVote()"&gt;Can I Vote&lt;/button&gt; &lt;br/&gt;&lt;br/&gt; </br>
+
+    &lt;h1 id="result"&gt;&lt;/h1&gt; </br>
+
+&lt;/body&gt; </br>
 &lt;/html&gt;  </br>
-<img src="ss3.png" style=" height: 300px; width: 59vw;float: right;margin-top:-280px;"/>
- 
+ <img src="ss3.png" style=" height: 320px; width:48vw;float: right;margin-top:-380px;"/>

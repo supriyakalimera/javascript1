@@ -1,33 +1,54 @@
-&lt;html&gt; </br>
-&lt;head&gt; </br>
-    &lt;title&gt;Demo04&lt;/title&gt; </br>
+<html>
+    <head>
+      <title>demo5</title>
+     <style> 
+     .container{
+        display: flex;
+     }
+        .container div{
+            border: 2px solid black;
+        }
+       .box-1{
+        flex: 1;
+        order: 2;
+       }
+       .box-2{
+        flex: 2;
+        order: 1;
+       }
+       .box-3{
+        flex:1;
+        order: 3;
+       }
+       
+     </style>
+    </head>
+    <body>
+       <div class="container">
+         <div class="box-1">
+            <h1>box one</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Vero, dolorum ipsum quisquam repellendus esse corporis 
+                voluptate sed ut impedit quidem. Odio rerum sapiente omnis 
+                sint soluta porro adipisci enim libero!</p>
+         </div>
+         <div class="box-2">
+            <h1>box two</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Repellendus impedit aperiam reiciendis atque optio odio 
+                dicta neque quae quam, explicabo iure quia, suscipit veritatis fuga, 
+                consectetur quas. Nihil, tenetur quidem.</p>
 
-    &lt;script type="text/JavaScript"&gt;    </br>
-    
-    function square() { </br>
-        var num = document.getElementById('number').value; </br>
-        var square = num * num; </br>
-        document.getElementById('result').innerHTML = 'The square of ' + num + ' is: ' + square;   </br>  
-    } </br>
+         </div>
+         <div class="box-3">
+            <h1> box three</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellendus impedit aperiam reiciendis atque optio odio 
+               dicta neque quae quam, explicabo iure quia, suscipit veritatis fuga, 
+               consectetur quas. Nihil, tenetur quidem.</p>
 
-    function cube() { </br>
-        var num = document.getElementById('number').value; </br>
-        var cube = num * num * num; </br>
-        document.getElementById('result').innerHTML = 'The cube of ' + num + ' is: ' + cube; </br>
-    } </br>
-        
-    &lt;/script&gt; </br>
-&lt;/head&gt; </br>
-&lt;body&gt; </br>
-     
-    Enter a Number: &lt;input type="text" id="number" /&gt; &lt;br/&gt;&lt;br/&gt; </br>
-    &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  </br>
-     
-    &lt;button onclick="square()"&gt;GetSquare&lt;/button&gt; &nbsp; &nbsp;  </br>
-    &lt;button onclick="cube()"&gt;GetCube&lt;/button&gt; &lt;br/&gt;&lt;br/&gt; </br>
+         </div>
+       </div>
 
-    &lt;h1 id="result"&gt;&lt;/h1&gt; </br>
-
-&lt;/body&gt; </br>
-&lt;/html&gt; </br>
-<img src="ss5.png" style=" height: 300px; width: 42vw;float: right;margin-top:-270px;"/>
+    </body>
+</html>
